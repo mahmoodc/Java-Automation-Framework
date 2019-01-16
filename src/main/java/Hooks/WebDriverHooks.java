@@ -4,7 +4,9 @@ import Utils.WebDriverFactory;
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
-import org.testng.annotations.*;
+import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeSuite;
+
 
 public class WebDriverHooks {
 
@@ -17,7 +19,7 @@ public class WebDriverHooks {
 
     }*/
 
-    @BeforeTest
+    @BeforeSuite
     public void InitializeWebDriver()
     {
         ExtentHtmlReporter htmlReporter = new ExtentHtmlReporter("extent.html");
@@ -26,8 +28,9 @@ public class WebDriverHooks {
         extent = new ExtentReports();
         extent.attachReporter(htmlReporter);
         _extenttest.set(extent.createTest("MyFirstTest3", "Sample description"));
-        WebDriverFactory.InitDriver();
+        //WebDriverFactory.InitDriver();
     }
+
 
    /* @Test
     public void test5(){
@@ -54,5 +57,31 @@ public class WebDriverHooks {
 //    {
 //
 //    }
+
+
+/*    @CucumberOptions(features = "src/main/Features", plugin = "json:target/cucumber-report-feature-composite.json")
+    public class TestRunner {
+        private TestNGCucumberRunner testNGCucumberRunner;
+
+        @BeforeClass(alwaysRun = true)
+        public void setUpClass() throws Exception {
+            testNGCucumberRunner = new TestNGCucumberRunner(this.getClass());
+        }
+
+        @Test(groups = "cucumber scenarios", description = "Runs Cucumber
+                Scenarios", dataProvider = "scenarios")
+                public void scenario(PickleEventWrapper pickleEvent, CucumberFeatureWrapper
+                cucumberFeature) throws Throwable{
+            testNGCucumberRunner.runScenario(pickleEvent.getPickleEvent());
+        }
+        @DataProvider
+        public Object[][] scenarios() {
+            return testNGCucumberRunner.provideScenarios();
+        }
+
+        @AfterClass(alwaysRun = true)
+        public void tearDownClass() throws Exception {
+            testNGCucumberRunner.finish();
+        }*/
 }
 

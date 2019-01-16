@@ -9,7 +9,7 @@
         <module name="Java Framework" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
+    <bytecodeTargetLevel target="11">
       <module name="Java Framework" target="11" />
     </bytecodeTargetLevel>
   </component>

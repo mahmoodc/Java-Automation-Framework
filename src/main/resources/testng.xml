@@ -1,0 +1,29 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Default Suite" parallel="tests" thread-count="8">
+
+    <test name="Chrome Browser">
+        <parameter name="driver" value="chrome"/>
+    <classes>
+        <class name="Hooks.TestRunner"/>
+    </classes>
+</test>
+
+    <!--   <test name="Firefox Browser">
+          <parameter name="driver" value="firefox"/>
+          <classes>
+              <class name="Hooks.TestRunner"/>
+          </classes>
+      </test>
+        <test name="Edge Browser">
+             <parameter name="driver" value="edge"/>
+             <classes>
+                 <class name="Hooks.TestRunner"/>
+             </classes>
+         </test>
+         <test name="Internet Explorer Browser">
+             <parameter name="driver" value="ie"/>
+             <classes>
+                 <class name="Hooks.TestRunner"/>
+             </classes>
+         </test>-->
+</suite>
