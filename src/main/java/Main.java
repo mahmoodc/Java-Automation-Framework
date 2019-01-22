@@ -1,5 +1,6 @@
 
 import PageElements.BaseWebElement;
+import Utils.PageWaitUtils;
 import Utils.UIConfigurationSettings;
 import Utils.WebDriverFactory;
 import org.openqa.selenium.By;
@@ -49,8 +50,41 @@ public class Main {
         WebDriverFactory.InitDriver("chrome");
         WebDriverFactory.webdriver().get(UIConfigurationSettings.HomepageURL());
         Thread.sleep(2000);
-        WebDriverFactory.webdriver().findElements(By.cssSelector("#orb-nav-links ul li")).get(1).click();
-        //System.out.println(element.size());
+        //WebDriverFactory.webdriver().findElements(By.cssSelector("#orb-nav-links ul li")).get(1).click();
+        //String x = PageWaitUtils.GetDocumentReadyState();
+        //System.out.println(x);
+
+        //WebDriverFactory.webdriver().findElement(By.linkText("Weather")).click();
+        //Thread.sleep(2000);
+        PageWaitUtils t = new PageWaitUtils();
+        //Boolean x = t.PageStatus.apply(WebDriverFactory.webdriver());
+        //t.ForRedirected("https://www.bbc.co.uk/weather/", 60);
+        //var r = t.Until(x -> x.getCurrentUrl().equals("https://www.bbc.co.uk/"));
+        //var s = t.Until(x -> x.getPageSource().contains("bbc"));
+        //t.ForPageStatusChange("complete", 60);
+        Thread.sleep(3000);
+        t.WaitForJQuery();
+        //boolean f = t.PageUrlFormat().apply(WebDriverFactory.webdriver());
+        //System.out.println(f);
+        //boolean b = t.PageStatus.apply(WebDriverFactory.webdriver());
+        t.ForPageStatusChange("Complete",60);
+        System.out.println("Middle");
+        t.ForRedirected("http://www.bbc.co.uk/", 30);
+        System.out.println("finished");
+        //boolean e = t.PageStatus("Complete").apply();
+        //System.out.println(e);
+        //var e = t.Until(x-> x.findElement(By.linkText("Sport")));
+        //var y = t.Until(x -> WebDriverFactory.webdriver().getPageSource());
+        //t.ForPageStatusChange("Complete",60);
+       // var w =PageWaitUtils.GetDocumentReadyState();
+        //var c = PageWaitUtils.PageStatus("complete");
+        //System.out.println(t.Until(x -> x.getCurrentUrl().equals("Http://www.bbc.co.uk/")));
+       // String z = PageWaitUtils.PageStatus("complete").toString();
+        //System.out.println(b);
+        //System.out.println(s);
+       // System.out.println(e);
+       // System.out.println(c);
+       // System.out.println(w);
         //element.listIterator().next().click();
 
 
