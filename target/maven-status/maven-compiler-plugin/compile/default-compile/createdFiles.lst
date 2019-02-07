@@ -3,10 +3,12 @@ Utils\GoogleGuice.class
 Utils\WebDriverFactory.class
 Pages\DeskTopPages\DeskTop\HomePage\HomePageDeskTopImpl.class
 PageElements\InputObject.class
+Pages\DeskTopPages\CommonFragments\HeaderFragments.class
 Main.class
 PageElements\Button.class
 Pages\DeskTopPages\HomePage.class
 Utils\WebElementWait.class
+Pages\AbstractFragments.class
 Hooks\WebDriverHooks.class
 Hooks\TestRunner.class
 Utils\WebDriverUtils.class

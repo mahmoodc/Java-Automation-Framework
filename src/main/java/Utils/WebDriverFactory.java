@@ -1,8 +1,10 @@
 package Utils;
 
+import org.apache.http.Consts;
 import org.apache.log4j.LogManager;
 import org.apache.log4j.PropertyConfigurator;
 import org.apache.log4j.xml.DOMConfigurator;
+import org.openqa.selenium.ScreenOrientation;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebDriverException;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -14,6 +16,8 @@ import org.openqa.selenium.ie.InternetExplorerOptions;
 import org.testng.annotations.*;
 
 import java.io.IOException;
+import java.util.HashMap;
+import java.util.Map;
 
 public class WebDriverFactory {
 
@@ -45,6 +49,7 @@ public class WebDriverFactory {
         try {
             Logger.log().info("Initializing driver instance...");
             String Driver = driver;
+            //String Driver = "ipad";
             switch (Driver) {
                 case "chrome": {
                     System.setProperty("webdriver.chrome.driver", BrowDir + "chromedriver.exe");
@@ -52,8 +57,6 @@ public class WebDriverFactory {
                     chromeOptions.addArguments("--disable-notifications");
                     _driver.set(new ChromeDriver(chromeOptions));
                     _driver.get().manage().window().maximize();
-                    //_driver = new ChromeDriver(chromeOptions);
-                    //_driver.manage().window().maximize();
                     break;
                 }
                 case "edge": {
@@ -74,8 +77,36 @@ public class WebDriverFactory {
                     System.setProperty("webdriver.gecko.driver", BrowDir + "geckodriver.exe");
                     _driver.set(new FirefoxDriver());
                     _driver.get().manage().window().maximize();
-                    //_driver = new FirefoxDriver();
-                    //_driver.manage().window().maximize();
+                    break;
+                }
+                case "iphone x": {
+                    System.setProperty("webdriver.chrome.driver", BrowDir + "chromedriver.exe");
+                    Map<String, String> mobileEmulation = new HashMap<>();
+                    mobileEmulation.put("deviceName", "iPhone X");
+                    ChromeOptions chromeOptions = new ChromeOptions();
+                    chromeOptions.setExperimentalOption("mobileEmulation", mobileEmulation);
+                    _driver.set(new ChromeDriver(chromeOptions));
+                    _driver.get().manage().window().maximize();
+                    break;
+                }
+                case "ipad": {
+                    System.setProperty("webdriver.chrome.driver", BrowDir + "chromedriver.exe");
+                    Map<String, String> mobileEmulation = new HashMap<>();
+                    mobileEmulation.put("deviceName", "iPad");
+                    ChromeOptions chromeOptions = new ChromeOptions();
+                    chromeOptions.setExperimentalOption("mobileEmulation", mobileEmulation);
+                    _driver.set(new ChromeDriver(chromeOptions));
+                    _driver.get().manage().window().maximize();
+                    break;
+                }
+                case "S5": {
+                    System.setProperty("webdriver.chrome.driver", BrowDir + "chromedriver.exe");
+                    Map<String, String> mobileEmulation = new HashMap<>();
+                    mobileEmulation.put("deviceName", "Galaxy S5");
+                    ChromeOptions chromeOptions = new ChromeOptions();
+                    chromeOptions.setExperimentalOption("mobileEmulation", mobileEmulation);
+                    _driver.set(new ChromeDriver(chromeOptions));
+                    _driver.get().manage().window().maximize();
                     break;
                 }
                 default:

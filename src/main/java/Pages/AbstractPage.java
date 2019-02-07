@@ -31,13 +31,8 @@ public class AbstractPage {
 
         public AbstractPage()
         {
-            InitializePage();
-            PageFactory.initElements(WebDriverFactory.webdriver(), this);
-        }
 
-        protected void InitializePage()
-        {
-            // Can be overridden in child page
+            PageFactory.initElements(WebDriverFactory.webdriver(), this);
         }
 
         protected String GetUrl() {

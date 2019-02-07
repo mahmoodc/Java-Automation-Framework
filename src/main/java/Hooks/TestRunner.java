@@ -23,7 +23,7 @@ public class TestRunner extends AbstractTestNGCucumberTests {
 
     @BeforeTest
     @Parameters({"driver"})
-    public void InitializeWebDriver(String toy)
+    public void InitializeWebDriver(String driver)
     {
         ExtentHtmlReporter htmlReporter = new ExtentHtmlReporter("extent.html");
 
@@ -31,7 +31,7 @@ public class TestRunner extends AbstractTestNGCucumberTests {
         extent = new ExtentReports();
         extent.attachReporter(htmlReporter);
         _extenttest.set(extent.createTest("MyFirstTest3", "Sample description"));
-        WebDriverFactory.InitDriver(toy);
+        WebDriverFactory.InitDriver(driver);
     }
 
 

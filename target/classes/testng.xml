@@ -2,7 +2,7 @@
 <suite name="Default Suite" parallel="tests" thread-count="8">
 
     <test name="Chrome Browser">
-        <parameter name="driver" value="chrome"/>
+        <parameter name="driver" value="S5"/>
     <classes>
         <class name="Hooks.TestRunner"/>
     </classes>

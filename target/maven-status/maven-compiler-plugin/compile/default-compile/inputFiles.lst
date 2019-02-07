@@ -9,10 +9,12 @@ C:\Users\aonwuyal\Documents\Java Framework\src\main\java\Utils\PageWaitUtils.jav
 C:\Users\aonwuyal\Documents\Java Framework\src\main\java\Hooks\WebDriverHooks.java
 C:\Users\aonwuyal\Documents\Java Framework\src\main\java\Utils\WebElementUtils.java
 C:\Users\aonwuyal\Documents\Java Framework\src\main\java\Pages\Mobile\HomePage\MobileDeskTopImpl.java
+C:\Users\aonwuyal\Documents\Java Framework\src\main\java\Pages\DeskTopPages\CommonFragments\HeaderFragments.java
 C:\Users\aonwuyal\Documents\Java Framework\src\main\java\Pages\Interfaces\IHomePage.java
 C:\Users\aonwuyal\Documents\Java Framework\src\main\java\Main.java
 C:\Users\aonwuyal\Documents\Java Framework\src\main\java\Hooks\TestRunner.java
 C:\Users\aonwuyal\Documents\Java Framework\src\main\java\PageElements\InputObject.java
+C:\Users\aonwuyal\Documents\Java Framework\src\main\java\Pages\AbstractFragments.java
 C:\Users\aonwuyal\Documents\Java Framework\src\main\java\Hooks\TestRunner2.java
 C:\Users\aonwuyal\Documents\Java Framework\src\main\java\StepDefs\BBC.java
 C:\Users\aonwuyal\Documents\Java Framework\src\main\java\Utils\WebElementWait.java
