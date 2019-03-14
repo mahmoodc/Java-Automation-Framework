@@ -17,11 +17,13 @@ public class UIConfigurationSettings {
         }
     }*/
 
+    private static String UiConfigSettings = System.getProperty("user.dir") + "\\src\\main\\resources\\UIConfigurationSettings.properties";
+
     private static String GetValue(String key) {
         FileInputStream inputStream = null;
         Properties properties = new Properties();
         try {
-            properties.load(new FileInputStream("C:\\Users\\aonwuyal\\Documents\\Java Framework\\src\\main\\resources\\UIConfigurationSettings.properties"));
+            properties.load(new FileInputStream(UiConfigSettings));
             return properties.getProperty(key);
         } catch (IOException error) {
             return ("Key " + key + " is not found in Properties file" + error);

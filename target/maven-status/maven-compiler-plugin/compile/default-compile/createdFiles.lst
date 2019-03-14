@@ -7,6 +7,7 @@ Pages\DeskTopPages\CommonFragments\HeaderFragments.class
 Main.class
 PageElements\Button.class
 Pages\DeskTopPages\HomePage.class
+Pages\DeskTopPages\CommonFragments\MobileHeaderFragments.class
 Utils\WebElementWait.class
 Pages\AbstractFragments.class
 Hooks\WebDriverHooks.class
