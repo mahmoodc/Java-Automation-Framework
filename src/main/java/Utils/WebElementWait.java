@@ -38,4 +38,28 @@ public class WebElementWait {
         var wait = new WebDriverWait(WebDriverFactory.webdriver(), timeout);
         wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
     }
+
+    public static void UntilElementIsDisabled(WebElement element, int timeout)
+    {
+        var wait = new WebDriverWait(WebDriverFactory.webdriver(), timeout);
+        wait.until(driver -> !element.isEnabled());
+    }
+
+    public static void UntilElementIsDisplayed(WebElement element, int timeout)
+    {
+        var wait = new WebDriverWait(WebDriverFactory.webdriver(), timeout);
+        wait.until(driver -> element.isDisplayed());
+    }
+
+    public static void UntilElementIsEnabled(WebElement element, int timeout)
+    {
+        var wait = new WebDriverWait(WebDriverFactory.webdriver(), timeout);
+        wait.until(driver -> element.isEnabled());
+    }
+
+    public static void UntilElementIsEnabled(By locator, int timeout)
+    {
+        var wait = new WebDriverWait(WebDriverFactory.webdriver(), timeout);
+        wait.until(ExpectedConditions.presenceOfElementLocated(locator));
+    }
 }

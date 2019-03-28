@@ -8,7 +8,7 @@ import org.openqa.selenium.interactions.Actions;
 import java.util.List;
 
 public class BaseWebElement {
-    protected WebElement webelement;
+    protected static WebElement webelement;
 
     public BaseWebElement(By locator) {
         if (WebDriverFactory.webdriver().findElements(locator).size() > 1)
@@ -57,8 +57,7 @@ public class BaseWebElement {
     }
 
     public List<WebElement> GetChildElements(By locator) {
-        return webelement.findElements(locator);
-    }
+        return (webelement.findElements(locator)); }
 }
 
 

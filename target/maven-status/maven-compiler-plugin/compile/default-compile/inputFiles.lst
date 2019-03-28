@@ -1,18 +1,28 @@
-C:\Users\aonwuyal\Documents\Java Framework\src\main\java\PageElements\Button.java
-C:\Users\aonwuyal\Documents\Java Framework\src\main\java\PageElements\DropDownList.java
-C:\Users\aonwuyal\Documents\Java Framework\src\main\java\Utils\Logger.java
-C:\Users\aonwuyal\Documents\Java Framework\src\main\java\Hooks\TestRunner2.java
-C:\Users\aonwuyal\Documents\Java Framework\src\main\java\StepDefs\BBC.java
-C:\Users\aonwuyal\Documents\Java Framework\src\main\java\Utils\WebElementWait.java
-C:\Users\aonwuyal\Documents\Java Framework\src\main\java\PageElements\BaseWebElement.java
-C:\Users\aonwuyal\Documents\Java Framework\src\main\java\Hooks\WebDriverHooks.java
-C:\Users\aonwuyal\Documents\Java Framework\src\main\java\Utils\WebElementUtils.java
-C:\Users\aonwuyal\Documents\Java Framework\src\main\java\PageElements\ClickableObject.java
-C:\Users\aonwuyal\Documents\Java Framework\src\main\java\PageElements\Checkbox.java
-C:\Users\aonwuyal\Documents\Java Framework\src\main\java\Utils\WebDriverUtils.java
-C:\Users\aonwuyal\Documents\Java Framework\src\main\java\Utils\WebDriverFactory.java
-C:\Users\aonwuyal\Documents\Java Framework\src\main\java\Main.java
-C:\Users\aonwuyal\Documents\Java Framework\src\main\java\Hooks\TestRunner.java
-C:\Users\aonwuyal\Documents\Java Framework\src\main\java\PageElements\InputObject.java
-C:\Users\aonwuyal\Documents\Java Framework\src\main\java\PageElements\ImageObject.java
-C:\Users\aonwuyal\Documents\Java Framework\src\main\java\Utils\UIConfigurationSettings.java
+C:\Users\Andre\Repos\Java\Java-Automation-Framework\src\main\java\Pages\AbstractFragments.java
+C:\Users\Andre\Repos\Java\Java-Automation-Framework\src\main\java\Pages\DeskTopPages\CommonFragments\MobileHeaderFragments.java
+C:\Users\Andre\Repos\Java\Java-Automation-Framework\src\main\java\Utils\WebDriverFactory.java
+C:\Users\Andre\Repos\Java\Java-Automation-Framework\src\main\java\Utils\WebElementWait.java
+C:\Users\Andre\Repos\Java\Java-Automation-Framework\src\main\java\PageElements\BaseWebElement.java
+C:\Users\Andre\Repos\Java\Java-Automation-Framework\src\main\java\Pages\Interfaces\IHomePage.java
+C:\Users\Andre\Repos\Java\Java-Automation-Framework\src\main\java\Utils\Logger.java
+C:\Users\Andre\Repos\Java\Java-Automation-Framework\src\main\java\Pages\DeskTopPages\HomePage.java
+C:\Users\Andre\Repos\Java\Java-Automation-Framework\src\main\java\PageElements\ImageObject.java
+C:\Users\Andre\Repos\Java\Java-Automation-Framework\src\main\java\PageElements\DropDownList.java
+C:\Users\Andre\Repos\Java\Java-Automation-Framework\src\main\java\Utils\WebDriverUtils.java
+C:\Users\Andre\Repos\Java\Java-Automation-Framework\src\main\java\PageElements\Checkbox.java
+C:\Users\Andre\Repos\Java\Java-Automation-Framework\src\main\java\Utils\WebElementUtils.java
+C:\Users\Andre\Repos\Java\Java-Automation-Framework\src\main\java\Main.java
+C:\Users\Andre\Repos\Java\Java-Automation-Framework\src\main\java\Pages\DeskTopPages\CommonFragments\HeaderFragments.java
+C:\Users\Andre\Repos\Java\Java-Automation-Framework\src\main\java\Utils\UIConfigurationSettings.java
+C:\Users\Andre\Repos\Java\Java-Automation-Framework\src\main\java\Pages\AbstractPage.java
+C:\Users\Andre\Repos\Java\Java-Automation-Framework\src\main\java\PageElements\ClickableObject.java
+C:\Users\Andre\Repos\Java\Java-Automation-Framework\src\main\java\Pages\Mobile\HomePage\MobileDeskTopImpl.java
+C:\Users\Andre\Repos\Java\Java-Automation-Framework\src\main\java\StepDefs\BBC.java
+C:\Users\Andre\Repos\Java\Java-Automation-Framework\src\main\java\Utils\GoogleGuice.java
+C:\Users\Andre\Repos\Java\Java-Automation-Framework\src\main\java\Hooks\TestRunner.java
+C:\Users\Andre\Repos\Java\Java-Automation-Framework\src\main\java\Hooks\TestRunner2.java
+C:\Users\Andre\Repos\Java\Java-Automation-Framework\src\main\java\Hooks\WebDriverHooks.java
+C:\Users\Andre\Repos\Java\Java-Automation-Framework\src\main\java\Utils\PageWaitUtils.java
+C:\Users\Andre\Repos\Java\Java-Automation-Framework\src\main\java\Pages\DeskTopPages\DeskTop\HomePage\HomePageDeskTopImpl.java
+C:\Users\Andre\Repos\Java\Java-Automation-Framework\src\main\java\PageElements\Button.java
+C:\Users\Andre\Repos\Java\Java-Automation-Framework\src\main\java\PageElements\InputObject.java
