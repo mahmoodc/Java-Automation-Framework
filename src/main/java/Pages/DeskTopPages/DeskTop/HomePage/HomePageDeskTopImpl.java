@@ -16,7 +16,7 @@ public class HomePageDeskTopImpl implements IHomePage {
     public void ClickBBCWeather()
     {
         headerFragments.GetBrandModelButtonByName().Click();
-        headerFragments.GetBrandModelButtonByName1().Click();
+        //headerFragments.GetBrandModelButtonByName1().Click();
         headerFragments.GetBrandModelButtonByName2().Click();
     }
 }

@@ -1,16 +1,152 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
+<testng-results ignored="0" total="8" passed="7" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2019-03-14T11:28:40Z" name="Default Suite" finished-at="2019-03-14T11:28:58Z" duration-ms="18387">
+  <suite started-at="2019-04-03T16:22:13Z" name="Default Suite" finished-at="2019-04-03T16:22:42Z" duration-ms="28999">
     <groups>
       <group name="cucumber">
-        <method signature="AbstractTestNGCucumberTests.runScenario(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:Hooks.TestRunner@6f4a47c7]" name="runScenario" class="cucumber.api.testng.AbstractTestNGCucumberTests"/>
+        <method signature="AbstractTestNGCucumberTests.runScenario(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:Hooks.TestRunner@6913c1fb]" name="runScenario" class="cucumber.api.testng.AbstractTestNGCucumberTests"/>
+        <method signature="AbstractTestNGCucumberTests.runScenario(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:Hooks.TestRunner@757277dc]" name="runScenario" class="cucumber.api.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test started-at="2019-03-14T11:28:40Z" name="Chrome Browser" finished-at="2019-03-14T11:28:58Z" duration-ms="18387">
+    <test started-at="2019-04-03T16:22:13Z" name="Chrome Browser Desktop " finished-at="2019-04-03T16:22:25Z" duration-ms="12790">
       <class name="Hooks.TestRunner">
-        <test-method is-config="true" signature="InitializeWebDriver(java.lang.String)[pri:0, instance:Hooks.TestRunner@6f4a47c7]" started-at="2019-03-14T11:28:40Z" name="InitializeWebDriver" finished-at="2019-03-14T11:28:44Z" duration-ms="3937" status="PASS">
+        <test-method is-config="true" signature="InitializeWebDriver(java.lang.String)[pri:0, instance:Hooks.TestRunner@6913c1fb]" started-at="2019-04-03T16:22:13Z" name="InitializeWebDriver" finished-at="2019-04-03T16:22:16Z" duration-ms="3812" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- InitializeWebDriver -->
+        <test-method is-config="true" signature="setUpClass()[pri:0, instance:Hooks.TestRunner@6913c1fb]" started-at="2019-04-03T16:22:16Z" name="setUpClass" finished-at="2019-04-03T16:22:17Z" duration-ms="110" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method is-config="true" signature="InitiliseScreen(java.lang.String)[pri:0, instance:Hooks.TestRunner@6913c1fb]" started-at="2019-04-03T16:22:17Z" name="InitiliseScreen" finished-at="2019-04-03T16:22:17Z" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Desktop]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- InitiliseScreen -->
+        <test-method signature="runScenario(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:Hooks.TestRunner@6913c1fb]" started-at="2019-04-03T16:22:17Z" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2019-04-03T16:22:20Z" duration-ms="3319" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["testing a link"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["testing"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="InitiliseScreen(java.lang.String)[pri:0, instance:Hooks.TestRunner@6913c1fb]" started-at="2019-04-03T16:22:20Z" name="InitiliseScreen" finished-at="2019-04-03T16:22:20Z" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Desktop]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- InitiliseScreen -->
+        <test-method signature="runScenario(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:Hooks.TestRunner@6913c1fb]" started-at="2019-04-03T16:22:20Z" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2019-04-03T16:22:22Z" duration-ms="1626" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["testing a link two"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["testing"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:Hooks.TestRunner@6913c1fb]" started-at="2019-04-03T16:22:22Z" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2019-04-03T16:22:23Z" duration-ms="1309" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["testing a link"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Logout"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="InitiliseScreen(java.lang.String)[pri:0, instance:Hooks.TestRunner@6913c1fb]" started-at="2019-04-03T16:22:22Z" name="InitiliseScreen" finished-at="2019-04-03T16:22:22Z" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Desktop]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- InitiliseScreen -->
+        <test-method is-config="true" signature="InitiliseScreen(java.lang.String)[pri:0, instance:Hooks.TestRunner@6913c1fb]" started-at="2019-04-03T16:22:23Z" name="InitiliseScreen" finished-at="2019-04-03T16:22:23Z" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Desktop]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- InitiliseScreen -->
+        <test-method signature="runScenario(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:Hooks.TestRunner@6913c1fb]" started-at="2019-04-03T16:22:23Z" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2019-04-03T16:22:24Z" duration-ms="1484" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["testing a link two"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Logout"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:Hooks.TestRunner@6913c1fb]" started-at="2019-04-03T16:22:24Z" name="tearDownClass" finished-at="2019-04-03T16:22:24Z" duration-ms="34" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+        <test-method is-config="true" signature="TearDown()[pri:0, instance:Hooks.TestRunner@6913c1fb]" started-at="2019-04-03T16:22:24Z" name="TearDown" finished-at="2019-04-03T16:22:25Z" duration-ms="1048" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TearDown -->
+      </class> <!-- Hooks.TestRunner -->
+    </test> <!-- Chrome Browser Desktop  -->
+    <test started-at="2019-04-03T16:22:13Z" name="Chrome Browser Desktop 1" finished-at="2019-04-03T16:22:42Z" duration-ms="28999">
+      <class name="Hooks.TestRunner">
+        <test-method is-config="true" signature="InitializeWebDriver(java.lang.String)[pri:0, instance:Hooks.TestRunner@757277dc]" started-at="2019-04-03T16:22:13Z" name="InitializeWebDriver" finished-at="2019-04-03T16:22:16Z" duration-ms="3808" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -21,11 +157,22 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- InitializeWebDriver -->
-        <test-method is-config="true" signature="setUpClass()[pri:0, instance:Hooks.TestRunner@6f4a47c7]" started-at="2019-03-14T11:28:44Z" name="setUpClass" finished-at="2019-03-14T11:28:44Z" duration-ms="176" status="PASS">
+        <test-method is-config="true" signature="setUpClass()[pri:0, instance:Hooks.TestRunner@757277dc]" started-at="2019-04-03T16:22:16Z" name="setUpClass" finished-at="2019-04-03T16:22:17Z" duration-ms="110" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method signature="runScenario(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:Hooks.TestRunner@6f4a47c7]" started-at="2019-03-14T11:28:44Z" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2019-03-14T11:28:51Z" duration-ms="6741" status="PASS">
+        <test-method is-config="true" signature="InitiliseScreen(java.lang.String)[pri:0, instance:Hooks.TestRunner@757277dc]" started-at="2019-04-03T16:22:17Z" name="InitiliseScreen" finished-at="2019-04-03T16:22:17Z" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Mobile]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- InitiliseScreen -->
+        <test-method signature="runScenario(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:Hooks.TestRunner@757277dc]" started-at="2019-04-03T16:22:17Z" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2019-04-03T16:22:20Z" duration-ms="3270" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -41,7 +188,18 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:Hooks.TestRunner@6f4a47c7]" started-at="2019-03-14T11:28:51Z" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2019-03-14T11:28:53Z" duration-ms="2230" status="PASS">
+        <test-method is-config="true" signature="InitiliseScreen(java.lang.String)[pri:0, instance:Hooks.TestRunner@757277dc]" started-at="2019-04-03T16:22:20Z" name="InitiliseScreen" finished-at="2019-04-03T16:22:20Z" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Mobile]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- InitiliseScreen -->
+        <test-method signature="runScenario(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:Hooks.TestRunner@757277dc]" started-at="2019-04-03T16:22:20Z" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2019-04-03T16:22:27Z" duration-ms="7134" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -57,7 +215,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:Hooks.TestRunner@6f4a47c7]" started-at="2019-03-14T11:28:53Z" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2019-03-14T11:28:55Z" duration-ms="2106" status="PASS">
+        <test-method signature="runScenario(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:Hooks.TestRunner@757277dc]" started-at="2019-04-03T16:22:27Z" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2019-04-03T16:22:33Z" duration-ms="6217" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -70,10 +228,72 @@
               </value>
             </param>
           </params>
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"css selector","selector":"#orb-panel-more > div > ul > li.orb-nav-sport > a"}
+  (Session info: chrome=73.0.3683.86)
+  (Driver info: chromedriver=2.45.615291 (ec3682e3c9061c10f26ea9e5cdcf3c53f3f74387),platform=Windows NT 10.0.17763 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-C8D3UUN', ip: '192.168.0.65', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.45.615291 (ec3682e3c9061c..., userDataDir: C:\Users\Andre\AppData\Loca...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:63292}, handlesAlerts: true, hasTouchScreen: true, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: true, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), rotatable: false, setWindowRect: true, strictFileInteractability: false, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 73.0.3683.86, webStorageEnabled: true}
+Session ID: efab50645b19f0977f7c11679f575880
+*** Element info: {Using=css selector, value=#orb-panel-more > div > ul > li.orb-nav-sport > a}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"#orb-panel-more > div > ul > li.orb-nav-sport > a"}
+  (Session info: chrome=73.0.3683.86)
+  (Driver info: chromedriver=2.45.615291 (ec3682e3c9061c10f26ea9e5cdcf3c53f3f74387),platform=Windows NT 10.0.17763 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-C8D3UUN', ip: '192.168.0.65', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.45.615291 (ec3682e3c9061c..., userDataDir: C:\Users\Andre\AppData\Loca...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:63292}, handlesAlerts: true, hasTouchScreen: true, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: true, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), rotatable: false, setWindowRect: true, strictFileInteractability: false, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 73.0.3683.86, webStorageEnabled: true}
+Session ID: efab50645b19f0977f7c11679f575880
+*** Element info: {Using=css selector, value=#orb-panel-more > div > ul > li.orb-nav-sport > a}
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:420)
+at org.openqa.selenium.By$ByCssSelector.findElement(By.java:431)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+at PageElements.BaseWebElement.<init>(BaseWebElement.java:17)
+at PageElements.ClickableObject.<init>(ClickableObject.java:13)
+at Pages.DeskTopPages.CommonFragments.MobileHeaderFragments.GetBrandModelButtonByName2(MobileHeaderFragments.java:31)
+at Pages.Mobile.HomePage.MobileDeskTopImpl.ClickBBCWeather(MobileDeskTopImpl.java:19)
+at StepDefs.BBC.iClickTheWeatherLink(BBC.java:28)
+at ✽.I click the weather link(src/main/Features/Logout.feature:4)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:Hooks.TestRunner@6f4a47c7]" started-at="2019-03-14T11:28:55Z" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2019-03-14T11:28:57Z" duration-ms="2128" status="PASS">
+        <test-method is-config="true" signature="InitiliseScreen(java.lang.String)[pri:0, instance:Hooks.TestRunner@757277dc]" started-at="2019-04-03T16:22:27Z" name="InitiliseScreen" finished-at="2019-04-03T16:22:27Z" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Mobile]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- InitiliseScreen -->
+        <test-method signature="runScenario(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:Hooks.TestRunner@757277dc]" started-at="2019-04-03T16:22:33Z" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2019-04-03T16:22:41Z" duration-ms="7592" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -89,15 +309,26 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:Hooks.TestRunner@6f4a47c7]" started-at="2019-03-14T11:28:57Z" name="tearDownClass" finished-at="2019-03-14T11:28:57Z" duration-ms="25" status="PASS">
+        <test-method is-config="true" signature="InitiliseScreen(java.lang.String)[pri:0, instance:Hooks.TestRunner@757277dc]" started-at="2019-04-03T16:22:33Z" name="InitiliseScreen" finished-at="2019-04-03T16:22:33Z" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Mobile]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- InitiliseScreen -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:Hooks.TestRunner@757277dc]" started-at="2019-04-03T16:22:41Z" name="tearDownClass" finished-at="2019-04-03T16:22:41Z" duration-ms="17" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->
-        <test-method is-config="true" signature="TearDown()[pri:0, instance:Hooks.TestRunner@6f4a47c7]" started-at="2019-03-14T11:28:57Z" name="TearDown" finished-at="2019-03-14T11:28:58Z" duration-ms="987" status="PASS">
+        <test-method is-config="true" signature="TearDown()[pri:0, instance:Hooks.TestRunner@757277dc]" started-at="2019-04-03T16:22:41Z" name="TearDown" finished-at="2019-04-03T16:22:42Z" duration-ms="798" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TearDown -->
       </class> <!-- Hooks.TestRunner -->
-    </test> <!-- Chrome Browser -->
+    </test> <!-- Chrome Browser Desktop 1 -->
   </suite> <!-- Default Suite -->
 </testng-results>

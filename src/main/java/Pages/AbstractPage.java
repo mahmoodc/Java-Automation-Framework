@@ -66,10 +66,7 @@ public class AbstractPage {
 
         private Boolean HasUrlFormat() {
             String x = GetUrlFormat();
-            if ((!x.isBlank()) || (!x.isEmpty())) {
-                return true;
-            }
-            return false;
+            return (!x.isBlank()) || (!x.isEmpty());
             //!(String.IsNullOrEmpty(GetUrlFormat()));
         }
 

@@ -1,5 +1,5 @@
 package Pages.Interfaces;
 
 public interface IHomePage {
-    void ClickBBCWeather();
+    void ClickBBCWeather() throws InterruptedException;
 }

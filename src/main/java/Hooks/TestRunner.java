@@ -1,11 +1,13 @@
 package Hooks;
 
 
+import Utils.GoogleGuice;
 import Utils.WebDriverFactory;
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
 import cucumber.api.CucumberOptions;
+import cucumber.api.java.BeforeStep;
 import cucumber.api.testng.AbstractTestNGCucumberTests;
 import org.testng.annotations.*;
 
@@ -15,6 +17,7 @@ public class TestRunner extends AbstractTestNGCucumberTests {
     //public static ExtentHtmlReporter htmlReporter = new ExtentHtmlReporter("extent2.html");
     private static ExtentReports extent;
     public static ThreadLocal<ExtentTest> _extenttest = new ThreadLocal<>();
+    GoogleGuice guice = new GoogleGuice();
 
 /*    @BeforeSuite
             public void setUp() {
@@ -31,7 +34,16 @@ public class TestRunner extends AbstractTestNGCucumberTests {
         extent = new ExtentReports();
         extent.attachReporter(htmlReporter);
         _extenttest.set(extent.createTest("MyFirstTest3", "Sample description"));
+       //guice.TestScreen(screen);
         WebDriverFactory.InitDriver(driver);
+
+    }
+
+    @BeforeMethod
+    @Parameters({"screen"})
+    public void InitiliseScreen(String screen)
+    {
+        guice.TestScreen(screen);
     }
 
 

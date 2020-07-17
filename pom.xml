@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<configuration>
 <project xmlns="http://maven.apache.org/POM/4.0.0"
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
@@ -17,7 +18,7 @@
                 <source>11</source>
                 <target>11</target>
             </configuration>
-        </plugin>
+        </plugin>a
         <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-surefire-plugin</artifactId>
@@ -25,7 +26,7 @@
 
             <configuration>
                 <suiteXmlFiles>
-                    <suiteXmlFile>src/main/resources/testng.xml</suiteXmlFile>
+                    <suiteXmlFile>src/main/resources/testing.xml</suiteXmlFile>
                 </suiteXmlFiles>
             </configuration>
         </plugin>
@@ -103,3 +104,4 @@
         </dependency>
     </dependencies>
 </project>
+</configuration>

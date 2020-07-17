@@ -1,11 +1,13 @@
 package Hooks;
 
+import Utils.GoogleGuice;
 import Utils.WebDriverFactory;
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeSuite;
+import org.testng.annotations.Parameters;
 
 
 public class WebDriverHooks {
@@ -20,7 +22,8 @@ public class WebDriverHooks {
     }*/
 
     @BeforeSuite
-    public void InitializeWebDriver()
+
+    public void InitializeWebDriver(String screen)
     {
         ExtentHtmlReporter htmlReporter = new ExtentHtmlReporter("extent.html");
 
@@ -29,6 +32,7 @@ public class WebDriverHooks {
         extent.attachReporter(htmlReporter);
         _extenttest.set(extent.createTest("MyFirstTest3", "Sample description"));
         //WebDriverFactory.InitDriver();
+        //GoogleGuice.screenType = GoogleGuice.TestScreen(screen);
     }
 
 

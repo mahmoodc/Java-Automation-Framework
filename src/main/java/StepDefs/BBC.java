@@ -8,6 +8,7 @@ import com.google.inject.Guice;
 import com.google.inject.Injector;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.When;
+import org.w3c.dom.html.HTMLSelectElement;
 
 public class BBC {
 
@@ -16,11 +17,14 @@ public class BBC {
 
     @Given("^I am on bbc website$")
     public void iAmOnBbcWebsite() {
+
         WebDriverFactory.webdriver().get(UIConfigurationSettings.HomepageURL());
+
+
     }
 
     @When("^I click the weather link$")
-    public void iClickTheWeatherLink() {
+    public void iClickTheWeatherLink() throws InterruptedException {
         ihomePage.ClickBBCWeather();
 
     }

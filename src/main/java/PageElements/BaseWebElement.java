@@ -18,7 +18,7 @@ public class BaseWebElement {
     }
 
     protected BaseWebElement(WebElement webelement) {
-        this.webelement = webelement;
+        BaseWebElement.webelement = webelement;
     }
 
 

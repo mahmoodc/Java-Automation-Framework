@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -38,7 +38,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Default_Suite" class="navigator-link">
-              <span class="suite-name border-passed">Default Suite</span>
+              <span class="suite-name border-failed">Default Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -54,7 +54,7 @@
                 </li>
                 <li>
                   <a href="#" panel-name="testlist-Default_Suite" class="navigator-link ">
-                    <span class="test-stats">1 test</span>
+                    <span class="test-stats">2 tests</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -91,7 +91,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">4 methods,   4 passed</span>
+                    <span class="method-stats">8 methods, 1 failed,   7 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Default_Suite" class="hide-methods failed suite-Default_Suite"> (hide)</a> <!-- hide-methods failed suite-Default_Suite -->
+                      <a href="#" panel-name="suite-Default_Suite" class="show-methods failed suite-Default_Suite"> (show)</a> <!-- show-methods failed suite-Default_Suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Default_Suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_Suite" title="Hooks.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;testing a link&quot;, &quot;Logout&quot;)">runScenario("testing a link", "Logout")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Default_Suite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -100,6 +114,11 @@
                       <a href="#" panel-name="suite-Default_Suite" class="show-methods passed suite-Default_Suite"> (show)</a> <!-- show-methods passed suite-Default_Suite -->
                     </span>
                     <div class="method-list-content passed suite-Default_Suite">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_Suite" title="Hooks.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;testing a link two&quot;, &quot;testing&quot;)">runScenario("testing a link two", "testing")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Default_Suite" title="Hooks.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;testing a link&quot;, &quot;testing&quot;)">runScenario("testing a link", "testing")</a> <!-- method navigator-link -->
@@ -112,12 +131,22 @@
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_Suite" title="Hooks.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;testing a link two&quot;, &quot;testing&quot;)">runScenario("testing a link two", "testing")</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Default_Suite" title="Hooks.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;testing a link two&quot;, &quot;Logout&quot;)">runScenario("testing a link two", "Logout")</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Default_Suite" title="Hooks.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;testing a link two&quot;, &quot;Logout&quot;)">runScenario("testing a link two", "Logout")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_Suite" title="Hooks.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;testing a link&quot;, &quot;testing&quot;)">runScenario("testing a link", "testing")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_Suite" title="Hooks.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;testing a link two&quot;, &quot;testing&quot;)">runScenario("testing a link two", "testing")</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Default_Suite -->
@@ -132,12 +161,71 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Default_Suite" class="panel Default_Suite">
+          <div class="suite-Default_Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">Hooks.TestRunner</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;testing a link&quot;, &quot;Logout&quot;)">
+                  </a> <!-- runScenario("testing a link", "Logout") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("testing a link", "Logout")</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#orb-panel-more &gt; div &gt; ul &gt; li.orb-nav-sport &gt; a&quot;}
+  (Session info: chrome=73.0.3683.86)
+  (Driver info: chromedriver=2.45.615291 (ec3682e3c9061c10f26ea9e5cdcf3c53f3f74387),platform=Windows NT 10.0.17763 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-C8D3UUN&apos;, ip: &apos;192.168.0.65&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.45.615291 (ec3682e3c9061c..., userDataDir: C:\Users\Andre\AppData\Loca...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:63292}, handlesAlerts: true, hasTouchScreen: true, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: true, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), rotatable: false, setWindowRect: true, strictFileInteractability: false, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 73.0.3683.86, webStorageEnabled: true}
+Session ID: efab50645b19f0977f7c11679f575880
+*** Element info: {Using=css selector, value=#orb-panel-more &gt; div &gt; ul &gt; li.orb-nav-sport &gt; a}
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:420)
+	at org.openqa.selenium.By$ByCssSelector.findElement(By.java:431)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at PageElements.BaseWebElement.&lt;init&gt;(BaseWebElement.java:17)
+	at PageElements.ClickableObject.&lt;init&gt;(ClickableObject.java:13)
+	at Pages.DeskTopPages.CommonFragments.MobileHeaderFragments.GetBrandModelButtonByName2(MobileHeaderFragments.java:31)
+	at Pages.Mobile.HomePage.MobileDeskTopImpl.ClickBBCWeather(MobileDeskTopImpl.java:19)
+	at StepDefs.BBC.iClickTheWeatherLink(BBC.java:28)
+	at ✽.I click the weather link(src/main/Features/Logout.feature:4)
+... Removed 4 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Default_Suite-class-failed -->
           <div class="suite-Default_Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
               <span class="class-name">Hooks.TestRunner</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;testing a link two&quot;, &quot;testing&quot;)">
+                  </a> <!-- runScenario("testing a link two", "testing") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("testing a link two", "testing")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
                   <a name="runScenario(&quot;testing a link&quot;, &quot;testing&quot;)">
@@ -160,10 +248,10 @@
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="runScenario(&quot;testing a link two&quot;, &quot;testing&quot;)">
-                  </a> <!-- runScenario("testing a link two", "testing") -->
+                  <a name="runScenario(&quot;testing a link two&quot;, &quot;Logout&quot;)">
+                  </a> <!-- runScenario("testing a link two", "Logout") -->
                   <span class="method-name">runScenario</span>
-                  <span class="parameters">("testing a link two", "testing")</span>
+                  <span class="parameters">("testing a link two", "Logout")</span>
                   <em>
 (Runs Cucumber Scenarios)                  </em>
                 </div> <!-- method-content -->
@@ -174,6 +262,26 @@
                   </a> <!-- runScenario("testing a link two", "Logout") -->
                   <span class="method-name">runScenario</span>
                   <span class="parameters">("testing a link two", "Logout")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;testing a link&quot;, &quot;testing&quot;)">
+                  </a> <!-- runScenario("testing a link", "testing") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("testing a link", "testing")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;testing a link two&quot;, &quot;testing&quot;)">
+                  </a> <!-- runScenario("testing a link two", "testing") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("testing a link two", "testing")</span>
                   <em>
 (Runs Cucumber Scenarios)                  </em>
                 </div> <!-- method-content -->
@@ -189,13 +297,21 @@
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
-&lt;suite thread-count=&quot;8&quot; parallel=&quot;tests&quot; name=&quot;Default Suite&quot; guice-stage=&quot;DEVELOPMENT&quot; verbose=&quot;0&quot;&gt;
-  &lt;test thread-count=&quot;8&quot; parallel=&quot;tests&quot; name=&quot;Chrome Browser&quot; verbose=&quot;0&quot;&gt;
-    &lt;parameter name=&quot;driver&quot; value=&quot;S5&quot;/&gt;
+&lt;suite thread-count=&quot;12&quot; parallel=&quot;tests&quot; name=&quot;Default Suite&quot; guice-stage=&quot;DEVELOPMENT&quot; verbose=&quot;0&quot;&gt;
+  &lt;test thread-count=&quot;12&quot; parallel=&quot;tests&quot; name=&quot;Chrome Browser Desktop &quot; verbose=&quot;0&quot;&gt;
+    &lt;parameter name=&quot;driver&quot; value=&quot;chrome&quot;/&gt;
+    &lt;parameter name=&quot;screen&quot; value=&quot;Desktop&quot;/&gt;
     &lt;classes&gt;
       &lt;class name=&quot;Hooks.TestRunner&quot;/&gt;
     &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- Chrome Browser --&gt;
+  &lt;/test&gt; &lt;!-- Chrome Browser Desktop  --&gt;
+  &lt;test thread-count=&quot;12&quot; parallel=&quot;tests&quot; name=&quot;Chrome Browser Desktop 1&quot; verbose=&quot;0&quot;&gt;
+    &lt;parameter name=&quot;driver&quot; value=&quot;S5&quot;/&gt;
+    &lt;parameter name=&quot;screen&quot; value=&quot;Mobile&quot;/&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;Hooks.TestRunner&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Chrome Browser Desktop 1 --&gt;
 &lt;/suite&gt; &lt;!-- Default Suite --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -207,7 +323,10 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Chrome Browser (1 class)</span>
+                <span class="test-name">Chrome Browser Desktop  (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">Chrome Browser Desktop 1 (1 class)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -241,28 +360,44 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(4);
+data.addRows(8);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'runScenario')
 data.setCell(0, 2, 'Hooks.TestRunner')
-data.setCell(0, 3, 6741);
+data.setCell(0, 3, 7592);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'runScenario')
 data.setCell(1, 2, 'Hooks.TestRunner')
-data.setCell(1, 3, 2230);
+data.setCell(1, 3, 7134);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'runScenario')
 data.setCell(2, 2, 'Hooks.TestRunner')
-data.setCell(2, 3, 2128);
+data.setCell(2, 3, 6217);
 data.setCell(3, 0, 3)
 data.setCell(3, 1, 'runScenario')
 data.setCell(3, 2, 'Hooks.TestRunner')
-data.setCell(3, 3, 2106);
+data.setCell(3, 3, 3319);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'runScenario')
+data.setCell(4, 2, 'Hooks.TestRunner')
+data.setCell(4, 3, 3270);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'runScenario')
+data.setCell(5, 2, 'Hooks.TestRunner')
+data.setCell(5, 3, 1626);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'runScenario')
+data.setCell(6, 2, 'Hooks.TestRunner')
+data.setCell(6, 3, 1484);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'runScenario')
+data.setCell(7, 2, 'Hooks.TestRunner')
+data.setCell(7, 3, 1309);
 window.suiteTableData['Default_Suite']= { tableData: data, tableDiv: 'times-div-Default_Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 13 seconds</span>
+              <span class="suite-total-time">Total running time: 31 seconds</span>
               <div id="times-div-Default_Suite">
               </div> <!-- times-div-Default_Suite -->
             </div> <!-- times-div -->
@@ -290,36 +425,102 @@ return data;
             <div class="chronological-class">
               <div class="chronological-class-name">Hooks.TestRunner</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
+                <span class="method-name">InitializeWebDriver(chrome)</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-test before -->
+              <div class="configuration-test before">
                 <span class="method-name">InitializeWebDriver(S5)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-test before -->
               <div class="configuration-class before">
                 <span class="method-name">setUpClass</span>
-                <span class="method-start">3948 ms</span>
+                <span class="method-start">3813 ms</span>
               </div> <!-- configuration-class before -->
+              <div class="configuration-class before">
+                <span class="method-name">setUpClass</span>
+                <span class="method-start">3813 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-method before">
+                <span class="method-name">InitiliseScreen(Desktop)</span>
+                <span class="method-start">3961 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">InitiliseScreen(Mobile)</span>
+                <span class="method-start">3961 ms</span>
+              </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">runScenario("testing a link", "testing")</span>
-                <span class="method-start">4164 ms</span>
+                <span class="method-start">3961 ms</span>
               </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("testing a link", "testing")</span>
+                <span class="method-start">3961 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">InitiliseScreen(Mobile)</span>
+                <span class="method-start">7233 ms</span>
+              </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">runScenario("testing a link two", "testing")</span>
-                <span class="method-start">10906 ms</span>
+                <span class="method-start">7234 ms</span>
               </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">InitiliseScreen(Desktop)</span>
+                <span class="method-start">7280 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">runScenario("testing a link two", "testing")</span>
+                <span class="method-start">7281 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">InitiliseScreen(Desktop)</span>
+                <span class="method-start">8908 ms</span>
+              </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">runScenario("testing a link", "Logout")</span>
-                <span class="method-start">13136 ms</span>
+                <span class="method-start">8908 ms</span>
               </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">InitiliseScreen(Desktop)</span>
+                <span class="method-start">10218 ms</span>
+              </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">runScenario("testing a link two", "Logout")</span>
-                <span class="method-start">15243 ms</span>
+                <span class="method-start">10218 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">tearDownClass</span>
-                <span class="method-start">17371 ms</span>
+                <span class="method-start">11703 ms</span>
               </div> <!-- configuration-class after -->
               <div class="configuration-test after">
                 <span class="method-name">TearDown</span>
-                <span class="method-start">17397 ms</span>
+                <span class="method-start">11738 ms</span>
+              </div> <!-- configuration-test after -->
+              <div class="configuration-method before">
+                <span class="method-name">InitiliseScreen(Mobile)</span>
+                <span class="method-start">14368 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">runScenario("testing a link", "Logout")</span>
+                <span class="method-start">14368 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">InitiliseScreen(Mobile)</span>
+                <span class="method-start">20588 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">runScenario("testing a link two", "Logout")</span>
+                <span class="method-start">20588 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">tearDownClass</span>
+                <span class="method-start">28180 ms</span>
+              </div> <!-- configuration-class after -->
+              <div class="configuration-test after">
+                <span class="method-name">TearDown</span>
+                <span class="method-start">28197 ms</span>
               </div> <!-- configuration-test after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
