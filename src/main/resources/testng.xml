@@ -11,13 +11,13 @@
     </test>
 
 
-    <test name="Chrome Browser Desktop 1">
+   <!-- <test name="Chrome Browser Desktop 1">
         <parameter name="driver" value="S5"/>
         <parameter name="screen" value="Mobile"/>
         <classes>
             <class name="Hooks.TestRunner"/>
         </classes>
-    </test>
+    </test>-->
 
 
 <!--    <test name="Chrome Browser Mobile">
